@@ -12,11 +12,7 @@ dist
 dist-ssr
 *.local
 .env
-hardhat.config.js
-smart_contract/hardhat.config.js
-/smart_contract/hardhat.config.js
 
-smart_contract\hardhat.config.js
 
 
 # Editor directories and files
@@ -29,6 +25,5 @@ smart_contract\hardhat.config.js
 *.njsproj
 *.sln
 *.sw?
-smart_contract/hardhat.config.js
-smart_contract/hardhat.config.js
+
 smart_contract/hardhat.config.js
