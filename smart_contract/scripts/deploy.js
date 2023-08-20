@@ -12,7 +12,7 @@ const runMain = async () => {
     await main();
     process.exit(0);
   } catch (error) {
-    console.errro(error);
+    console.error(error);
     process.exit(1);
   }
 };

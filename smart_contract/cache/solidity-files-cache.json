@@ -6,7 +6,7 @@
       "contentHash": "ae66265769cc28ebdaa34881df95bc5e",
       "sourceName": "contracts/Lock.sol",
       "solcConfig": {
-        "version": "0.8.19",
+        "version": "0.8.9",
         "settings": {
           "optimizer": {
             "enabled": false,
@@ -34,6 +34,41 @@
       ],
       "artifacts": [
         "Lock"
+      ]
+    },
+    "C:\\Users\\Rodzy\\Downloads\\EPICODe\\blockchain-interface\\blockchain-dashboard\\smart_contract\\contracts\\Transactions.sol": {
+      "lastModificationDate": 1692354352139,
+      "contentHash": "b13c4ed64d8c7fe52609cd0531a79a85",
+      "sourceName": "contracts/Transactions.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Transactions"
       ]
     }
   }

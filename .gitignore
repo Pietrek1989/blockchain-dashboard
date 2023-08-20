@@ -11,6 +11,13 @@ node_modules
 dist
 dist-ssr
 *.local
+.env
+hardhat.config.js
+smart_contract/hardhat.config.js
+/smart_contract/hardhat.config.js
+
+smart_contract\hardhat.config.js
+
 
 # Editor directories and files
 .vscode/*
@@ -22,3 +29,6 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+smart_contract/hardhat.config.js
+smart_contract/hardhat.config.js
+smart_contract/hardhat.config.js
