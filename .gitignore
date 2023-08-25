@@ -26,4 +26,3 @@ dist-ssr
 *.sln
 *.sw?
 
-smart_contract/hardhat.config.js
