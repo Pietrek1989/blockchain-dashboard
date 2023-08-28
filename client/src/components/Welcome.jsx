@@ -43,29 +43,34 @@ const Welcome = () => {
 
   return (
     <div className="flex w-full justify-center items-center">
-      <div className="flex mf:flex-row flex-col items-start justify-between md:p-20 py-12 px-4">
+      <div className="flex mf:flex-row flex-col items-center justify-between md:p-20 py-12 px-4">
         <div className="flex flex-1 justify-start items-start flex-col mf:mr-10">
-          <h1 className="text-3xl sm:text-5xl text-white text-gradient py-1">
-            Send Crypto <br /> across the world
-          </h1>
-          <p className="text-left mt-5 text-white font-light md:w-9/12 w-11/12 text-base">
-            Explore the crypto world. Buy and sell cryptocurrencies easily on
-            Krypto.
-          </p>
-          {!currentAccount && (
-            <button
-              type="button"
-              onClick={connectWallet}
-              className="flex flex-row justify-center items-center my-5 bg-[#2952e3] p-3 rounded-full cursor-pointer hover:bg-[#2546bd]"
-            >
-              <AiFillPlayCircle className="text-white mr-2" />
-              <p className="text-white text-base font-semibold">
-                Connect Wallet
-              </p>
-            </button>
-          )}
+          <div className="flex flex-col justify-center items-center">
+            <h1 className="text-3xl sm:text-5xl text-white text-gradient py-1">
+              Send your Ethereum! <br />
+            </h1>
+            <h4 className="text-white text-gradient text-2xl sm:text-3xl py-1">
+              Along with a gif and a message!
+            </h4>
 
-          <div className="grid sm:grid-cols-3 grid-cols-2 w-full mt-10">
+            <p className="text-left mt-5 text-white font-light md:w-9/12 w-11/12 text-base text-center">
+              Keep track of all your transactions in a stylish ui!
+            </p>
+            {!currentAccount && (
+              <button
+                type="button"
+                onClick={connectWallet}
+                className="flex flex-row justify-center items-center my-5 bg-[#627EEA] p-3 rounded-full cursor-pointer hover:bg-[#5269c5]"
+              >
+                <AiFillPlayCircle className="text-white mr-2" />
+                <p className="text-white text-base font-semibold">
+                  Connect Wallet
+                </p>
+              </button>
+            )}
+          </div>
+
+          {/* <div className="grid sm:grid-cols-3 grid-cols-2 w-full mt-10">
             <div className={`rounded-tl-2xl ${companyCommonStyles}`}>
               Reliability
             </div>
@@ -80,7 +85,7 @@ const Welcome = () => {
             <div className={`rounded-br-2xl ${companyCommonStyles}`}>
               Blockchain
             </div>
-          </div>
+          </div> */}
         </div>
 
         <div className="flex flex-col flex-1 items-center justify-start w-full mf:mt-0 mt-10">
@@ -92,7 +97,7 @@ const Welcome = () => {
                 </div>
                 <BsInfoCircle fontSize={17} color="#fff" />
               </div>
-              <div>
+              <div className="flex flex-col items-start">
                 <p className="text-white font-light text-sm">
                   {shortenAddress(currentAccount)}
                 </p>
@@ -116,7 +121,7 @@ const Welcome = () => {
               handleChange={handleChange}
             />
             <Input
-              placeholder="Keyword (Gif)"
+              placeholder="Gif keyword"
               name="keyword"
               type="text"
               handleChange={handleChange}
@@ -136,7 +141,7 @@ const Welcome = () => {
               <button
                 type="button"
                 onClick={handleSubmit}
-                className="text-white w-full mt-2 border-[1px] p-2 border-[#3d4f7c] hover:bg-[#3d4f7c] rounded-full cursor-pointer"
+                className="text-white w-full mt-2 border-[1px] p-2 border-[#627EEA] hover:bg-[#5269c5] rounded-full cursor-pointer"
               >
                 Send now
               </button>
